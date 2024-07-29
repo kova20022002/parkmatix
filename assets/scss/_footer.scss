@@ -1,0 +1,142 @@
+// footer css
+
+.footer {
+    padding-top: 350px;
+    background-image: url('../img/footer/footer-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+
+    @media #{$lg} {
+        padding-top: 220px;
+        margin-top: 50px;
+    }
+    @media #{$md} {
+        padding-top: 160px;
+        margin-top: 100px;
+    }
+    @media #{$xs} {
+        padding-top: 120px;
+        margin-top: 100px;
+    }
+
+    .widget-wrapper {
+
+        .footer-widget {
+            margin-bottom: 40px;
+
+            h3 {
+                color: $white;
+                margin-bottom: 25px;
+                font-weight: 600;
+            }
+
+            .links {
+
+                li {
+
+                    a {
+                        color: $white;
+                        font-size: 16px;
+                        line-height: 30px;
+
+                        &:hover {
+                            padding-left: 6px;
+                        }
+                    }
+                }
+            }
+
+            .download {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                li {
+
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+
+                    a {
+                        display: inline-flex;
+                        background: $white;
+                        border-radius: 10px;
+                        padding: 15px 25px;
+                        margin-bottom: 15px;
+                        align-items: center;
+    
+                        .icon {
+                            font-size: 30px;
+                            color: $heading-color;
+                            margin-right: 10px;
+                        }
+    
+                        .text {
+                            font-size: 10px;
+                            color: $body-color;
+    
+                            b {
+                                color: $heading-color;
+                                font-size: 16px;
+                                font-weight: 700;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-right-wrapper {
+        border-top: 2px solid rgba($white, .17);
+        padding: 25px 0;
+
+        .copy-right {
+
+            p {
+                color: rgba($white, .66);
+                font-size: 16px;
+
+                @media #{$xs} {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .socials {
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                @media #{$xs} {
+                    justify-content: center;
+                }
+
+                li {
+                    a {
+                        color: rgba($white, .66);
+                        font-size: 18px;
+                        margin-left: 20px;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

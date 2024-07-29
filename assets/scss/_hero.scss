@@ -1,0 +1,115 @@
+// hero-area 
+
+.hero-section {
+	position: relative;
+	z-index: 1;
+	background-image: url('../img/hero/hero-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+	padding: 150px 0;
+    
+
+	.hero-content {
+
+		@media #{$md} {
+			margin-bottom: 50px;
+		}
+		@media #{$xs} {
+			margin-bottom: 120px;
+		}
+
+		h1 {
+			font-size: 60px;
+			margin-bottom: 35px;
+			color: $white;
+
+			@media #{$laptop} {
+				font-size: 55px;
+			}
+			@media #{$lg} {
+				font-size: 48px;
+			}
+			@media #{$xs} {
+				font-size: 40px;
+			}
+			@media #{$sm} {
+				font-size: 50px;
+			}
+		}
+
+		p {
+			margin-bottom: 40px;
+			color: $white;
+		}
+
+		.main-btn {
+			background: $white;
+			color: $theme-color;
+			font-size: 20px;
+			font-weight: 700;
+			padding: 18px 52px;
+		}
+	}
+
+	.hero-img {
+		position: relative;
+		text-align: right;
+		z-index: 4;
+
+		.img-1 {
+			position: relative;
+			z-index: 5;
+			@include box-shadow(0 15px 35px rgba(0, 0, 0, .05));
+		}
+		
+		.img-3,
+		.img-2 {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		.img-2 {
+			z-index: 1;
+		}
+		.img-3 {
+			z-index: -1;
+		}
+
+	}
+}
+
+
+.client-logo-section {
+
+	.client-logo-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 30px 0;
+
+		@media #{$md, $xs} {
+			justify-content: center;
+		}
+
+		.single-logo {
+			width: 180px;
+			margin: 10px;
+			opacity: .4;
+			@include transition(.3s);
+
+			@media #{$lg} {
+				width: 160px;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
