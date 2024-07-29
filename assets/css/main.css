@@ -852,7 +852,7 @@ p {
 }
 
 .single-department {
-  margin-bottom: 55px;
+  margin-bottom: 15px;
 }
 
 .single-department span {
@@ -861,7 +861,7 @@ p {
   background: #487CFF;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(72, 124, 255, 0.34);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .single-department h3 {
@@ -892,7 +892,13 @@ p {
   }
 }
 
+.middle-image{
+  display: flex;
+  justify-content: center;
+}
+
 .faq-section .single-faq {
+  width: 700px;
   background: #fff;
   border-radius: 5px;
   margin-bottom: 20px;
