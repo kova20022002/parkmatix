@@ -456,6 +456,13 @@ p {
   .navbar {
     padding: 17px 0;
   }
+
+}
+
+@media only screen and (min-width: 50px) and (max-width: 772px) {
+  .navbar-brand img {
+    width: 250px;
+  }
 }
 
 .navbar-brand {
@@ -693,6 +700,7 @@ p {
 @media (max-width: 767px) {
   .hero-section .hero-content {
     margin-bottom: 120px;
+    margin-top: 150px;
   }
 }
 
